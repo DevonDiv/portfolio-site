@@ -1,0 +1,170 @@
+<?php
+            if(isset($_POST['submit'])) {
+                $to = "divinecz22@gmail.com";
+                $from = $_POST['email'];
+                $name = $_POST['name'];
+                $subject = $_POST['subject'];
+                $message = $name . " wrote the following:\n" . $_POST['message'];
+                $headers = "From: $from";
+                $result = mail($to, $subject, $message, $headers);
+            }
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Devon Divinecz</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version) -->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Dancing Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation -->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Devon Divinecz</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#skills">Skills</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header -->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Devon Divinecz</h1>
+                <h3 class="mb-5"><em>Full Stack Software Developer</em></h3>
+                <a class="btn btn-dark btn-xl" href="cv/DevonDivinecz_021322.pdf" download="DevonDivinecz_Resume" target="_blank">Download my CV</a>
+            </div>
+        </header>
+        <!-- About -->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>About Me</h2>
+                        <p class="lead mb-5">
+                            I am a Full Stack Developer based out of Windsor, Ontario. 
+                            I have a passion for creating and building new applications. 
+                            I have a strong background in both front-end and back-end development. 
+                            I am currently looking for a position in the field of web or mobile application development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="content-section bg-primary text-white text-center" id="skills">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Skills</h3>
+                    <h2 class="mb-5">What I Bring to the Table</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-desktop"></i></span>
+                        <h4><strong>Front-End</strong></h4>
+                        <p class="text-faded mb-0">HTML, CSS, Laravel, JavaScript, TypeScript & Angular</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-code"></i></span>
+                        <h4><strong>Back-End</strong></h4>
+                        <p class="text-faded mb-0">PHP, C#, Node.js & Express.js</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Mobile App Development</strong></h4>
+                        <p class="text-faded mb-0">
+                            Experience with Android Studio using Java & Xcode using Swift & Objective-C
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-tools"></i></span>
+                        <h4><strong>Tools</strong></h4>
+                        <p class="text-faded mb-0">MongoDB, JWT, JDBC, MySQL, Rest API's, Git, JSON</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://github.com/DevonDiv/course-tracker" target="_blank">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Course Tracker</div>
+                                    <p class="mb-lg-0">MEAN Stack Progressive Web Application for students to track their course work</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/course-tracker.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://github.com/romeronathan/CalorieTrack" target="_blank">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Calorie Tracker</div>
+                                    <p class="mb-0">Calorie Tracker JavaFX project using JDBC</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/calorie-tracker.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form -->
+        <section class="content-section bg-primary text-white" id="contact">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">Contact Me</h2>
+                <form class="contact-form" action="" method="post">
+                    <input type="text" name="name" class="form-control mb-2" placeholder="Name" />
+                    <input type="email" name="email" placeholder="Email" class="form-control mb-2" />
+                    <input type="text" name="subject" placeholder="Subject" class="form-control mb-2" />
+                    <textarea name="message" placeholder="Message" class="form-control mb-6" style="height: 200px;"></textarea>
+                    <button class="btn btn-lg btn-block btn-dark" type="submit" name="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/devondivinecz/" target="_blank"><i class="icon-social-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/DevonDiv"><i class="icon-social-github" target="_blank"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Devon Divinecz 2022</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button -->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
