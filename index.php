@@ -113,7 +113,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Course Tracker</div>
-                                    <p class="mb-lg-0">MEAN Stack Progressive Web Application for students to track their course work</p>
+                                    <p class="mb-lg-0">Progressive Web Application for students to track their course work using MEAN stack</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/course-tracker.jpg" alt="..." />
