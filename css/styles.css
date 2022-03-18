@@ -11478,13 +11478,13 @@ footer.footer .social-link:hover {
   padding-top: 8rem;
   padding-bottom: 8rem;
   /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/banner.jpg"); */
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/header-background.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/v617batch2-bb-01-technology.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 4rem;
   margin: 0;
   padding: 0;
